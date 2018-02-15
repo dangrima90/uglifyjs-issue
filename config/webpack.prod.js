@@ -174,8 +174,8 @@ module.exports = function (env) {
 			 */
 			// NOTE: To debug prod builds uncomment //debug lines and comment //prod lines
 			new UglifyJsPlugin({
-				// parallel: true,
-				// uglifyOptions: {
+				parallel: true,
+				uglifyOptions: {
 					ie8: false,
 					ecma: 6,
 					warnings: true,
@@ -184,7 +184,7 @@ module.exports = function (env) {
 						comments: false,
 						beautify: false,  // debug true
 					}
-				// },
+				},
 			}),
 
 			/**
